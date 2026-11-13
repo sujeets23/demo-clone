@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sport News - The Latest Headlines, Highlights & Rankings</title>
+  <meta name="description" content="Stay up to date with the latest sport news, live football results, cycling highlights, club rankings, and in-depth articles.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Caveat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       1. NAVBAR / HEADER
+       ========================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <a href="#home" class="brand-logo" aria-label="Sport News Home">
+        <img src="assets/img/logo.png" alt="Sport News" width="138" height="42">
+      </a>
+      
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item active"><a href="#home">Home</a></li>
+          <li class="nav-item"><a href="#category">Category</a></li>
+          <li class="nav-item"><a href="#trending">Trending News</a></li>
+          <li class="nav-item"><a href="#recent">Recent News</a></li>
+          <li class="nav-item"><a href="#ranking">Clubs Ranking</a></li>
+          <li class="nav-item"><a href="#articles">Sports Article</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-actions">
+        <button type="button" class="search-pill-btn" id="openSearchBtn" aria-label="Open search dialog">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Search</span>
+        </button>
+        
+        <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         2. HERO SECTION
+         ========================================================= -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        
+        <!-- Hero Left Visual Stage -->
+        <div class="hero-stage">
+          <div class="hero-watermark" aria-hidden="true">
+            <img src="assets/img/hero-basketball-watermark.png?v=2" alt="Basketball Watermark">
+          </div>
+          
+          <div class="hero-typography">
+            <h1 class="hero-title">
+              <span class="word-1">TOP</span>
+              <span class="word-2">SCORER TO</span>
+              <span class="word-3">THE FINAL</span>
+              <span class="word-4">MATCH</span>
+            </h1>
+          </div>
+          
+          <div class="hero-player-wrap" aria-hidden="true">
+            <img src="assets/img/hero-basketball-player.png" alt="Basketball Player Jumping with Ball">
+          </div>
+          
+          <div class="hero-content-bottom">
+            <p class="hero-description">
+              The EuroLeague Finals Top Scorer is the individual award for the player that gained the highest points in the EuroLeague Finals
+            </p>
+            <a href="#articles" class="btn-primary-dark">
+              CONTINUE READING
+            </a>
+          </div>
+        </div>
+        
+        <!-- Hero Right Sidebar -->
+        <aside class="hero-sidebar" aria-label="Today's Highlights">
+          <span class="today-pill-badge">Today</span>
+          
+          <article class="side-highlight-card">
+            <div class="side-highlight-media">
+              <img src="assets/img/today-runner.png" alt="Ethiopian runners training outdoors" loading="lazy">
+            </div>
+            <div class="side-highlight-body">
+              <span class="meta-tag">Race98 - 03 June 2023</span>
+              <h3 class="side-highlight-title">Ethiopian runners took the top four spots.</h3>
+            </div>
+          </article>
+          
+          <article class="side-highlight-card">
+            <div class="side-highlight-media">
+              <img src="assets/img/today-indycar.png" alt="IndyCar speeding on race track" loading="lazy">
+            </div>
+            <div class="side-highlight-body">
+              <span class="meta-tag">INDYCAR - 03 June 2023</span>
+              <h3 class="side-highlight-title">IndyCar Detroit: Dixon quickest in second practice</h3>
+            </div>
+          </article>
+        </aside>
+        
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. CATEGORY SECTION
+         ========================================================= -->
+    <section class="section-category" id="category">
+      <div class="container">
+        <h2 class="section-heading">Category</h2>
+        
+        <div class="category-grid">
+          <!-- Col 1: Football -->
+          <div class="cat-col">
+            <a href="#trending" class="cat-banner-pill" aria-label="Category: Football">
+              <span class="cat-pill-title">FOOTBALL</span>
+            </a>
+            <div class="cat-photo-card h-tall">
+              <img src="assets/img/cat-football.png" alt="Soccer ball in goal net" loading="lazy">
+            </div>
+          </div>
+          
+          <!-- Col 2: Basketball -->
+          <div class="cat-col">
+            <div class="cat-photo-card h-medium">
+              <img src="assets/img/cat-basketball.png" alt="Basketball resting on outdoor court" loading="lazy">
+            </div>
+            <a href="#trending" class="cat-banner-pill" aria-label="Category: Basketball">
+              <span class="cat-pill-title">
+                BASCKET<br><span class="sub-line">BALL</span>
+              </span>
+            </a>
+          </div>
+          
+          <!-- Col 3: Car Sport -->
+          <div class="cat-col">
+            <a href="#trending" class="cat-banner-pill" aria-label="Category: Car Sport">
+              <span class="cat-pill-title">CAR SPORT</span>
+            </a>
+            <div class="cat-photo-card h-tall">
+              <img src="assets/img/cat-carsport.png" alt="Sports car drifting around track with smoke" loading="lazy">
+            </div>
+          </div>
+          
+          <!-- Col 4: Table Tennis -->
+          <div class="cat-col">
+            <div class="cat-photo-card h-medium">
+              <img src="assets/img/cat-tabletennis.png" alt="Table tennis paddle and ball" loading="lazy">
+            </div>
+            <a href="#trending" class="cat-banner-pill" aria-label="Category: Table Tennis">
+              <span class="cat-pill-title">
+                TABLE<br><span class="sub-line">TENNIS</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. TRENDING NEWS SECTION
+         ========================================================= -->
+    <section class="section-trending" id="trending">
+      <div class="container">
+        <div class="trending-box">
+          
+          <!-- Left: List of Trending Items -->
+          <div class="trending-left">
+            <h2 class="section-heading">Trending News</h2>
+            
+            <div class="trending-list">
+              <article class="trending-item">
+                <div class="trending-thumb">
+                  <img src="assets/img/trending-horse.png" alt="Race horses in competition" loading="lazy">
+                </div>
+                <div class="trending-info">
+                  <span class="meta-tag">Race98 - 03 June 2023</span>
+                  <h3 class="trending-item-title">6-Year-Old Horse Dies at Belmont Park After Race Injury</h3>
+                  <p class="trending-excerpt">NEW YORK—A 6-year-old horse died after being injured in a race at Belmont Park ahead of next week’s</p>
+                </div>
+              </article>
+              
+              <div class="trending-divider" role="separator"></div>
+              
+              <article class="trending-item">
+                <div class="trending-thumb">
+                  <img src="assets/img/trending-cycling-small.png" alt="Cyclists competing on road course" loading="lazy">
+                </div>
+                <div class="trending-info">
+                  <span class="meta-tag">Jony.Ls - 03 June 2023</span>
+                  <h3 class="trending-item-title">Savilia Blunk Embraces Longer Season With World Cup</h3>
+                  <p class="trending-excerpt">Last year, Savilia Blunk took a more conservative approach to her first season as an Elite Class athlete, skipping some</p>
+                </div>
+              </article>
+              
+              <div class="trending-divider" role="separator"></div>
+              
+              <article class="trending-item">
+                <div class="trending-thumb">
+                  <img src="assets/img/trending-boxing.png" alt="Illuminated boxing ring under arena lights" loading="lazy">
+                </div>
+                <div class="trending-info">
+                  <span class="meta-tag">King.F - 03 June 2023</span>
+                  <h3 class="trending-item-title">Ryan Garcia is fighting again, this time on social media</h3>
+                  <p class="trending-excerpt">Boxing star Ryan Garcia and his promoter, Hall of Fame fighter Oscar De La Hoya, reignited their war of words via Twitter on</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          
+          <!-- Right: USA Cycling Feature Banner -->
+          <div class="trending-feature-card">
+            <img src="assets/img/trending-cycling-feature.png" alt="Male cyclist drinking water in workshop" class="trending-feature-bg" loading="lazy">
+            <div class="trending-feature-overlay" aria-hidden="true"></div>
+            
+            <div class="trending-feature-content">
+              <span class="badge-outline">Cycling</span>
+            </div>
+            
+            <div class="trending-feature-bottom">
+              <span class="meta-tag">Debits - 03 June 2023</span>
+              <h3 class="trending-feature-title">DISCOVER THE MEMBER BENEFITS OF USA CYCLING!</h3>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. FEATURED HERO BANNER (LIONEL MESSI)
+         ========================================================= -->
+    <section class="section-banner-football" aria-label="Featured Story">
+      <div class="container">
+        <div class="hero-banner-card" id="bannerCard">
+          <img src="assets/img/banner-messi-football.png" alt="Lionel Messi holding soccer ball" class="hero-banner-bg" loading="lazy">
+          <div class="hero-banner-overlay" aria-hidden="true"></div>
+          
+          <div class="hero-banner-content">
+            <span class="badge-outline">Football</span>
+            <div class="meta-tag">Agence France-Presse - 04 June 2023</div>
+            <h2 class="hero-banner-title">
+              LIONEL MESSI LEAVING LIGUE 1 TEAM PARIS SAINT-GERMAIN, CLUB CONFIRMS
+            </h2>
+            <p class="hero-banner-desc">
+              The EuroLeague Finals Top Scorer is the individual award for the player that gained the highest points in the EuroLeague Finals
+            </p>
+          </div>
+          
+          <div class="banner-footer-controls">
+            <div class="pagination-controls" aria-label="Featured Story Pagination">
+              <button type="button" class="page-arrow-btn" id="bannerPrevBtn" aria-label="Previous story">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="19" y1="12" x2="5" y2="12"></line>
+                  <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+              </button>
+              
+              <div class="page-numbers" id="bannerPageNumbers">
+                <button type="button" class="page-number active" data-page="1">1</button>
+                <button type="button" class="page-number" data-page="2">2</button>
+                <button type="button" class="page-number" data-page="3">3</button>
+                <button type="button" class="page-number" data-page="4">4</button>
+              </div>
+              
+              <button type="button" class="page-arrow-btn btn-dark" id="bannerNextBtn" aria-label="Next story">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. RECENT NEWS & CLUBS RANKING (DUAL SECTION)
+         ========================================================= -->
+    <section class="section-dual-grid" id="recent">
+      <div class="container dual-grid">
+        
+        <!-- Left Column: Recent News -->
+        <div class="recent-column">
+          <h2 class="section-heading">Recent News</h2>
+          
+          <div class="recent-sub-grid">
+            <!-- Feature Taekwondo Card -->
+            <article class="recent-feature-card">
+              <img src="assets/img/recent-taekwondo-main.png" alt="Taekwondo athlete preparing for match" loading="lazy">
+              <div class="recent-feature-gradient" aria-hidden="true"></div>
+              <div class="recent-feature-body">
+                <span class="tag">Day 5 Highlights</span>
+                <h3 class="title">Baku 2023 World Taekwondo Championships</h3>
+              </div>
+            </article>
+            
+            <!-- Mini List Card -->
+            <div class="recent-list-card">
+              <div class="recent-mini-items">
+                <article class="recent-mini-item">
+                  <div class="recent-mini-thumb">
+                    <img src="assets/img/recent-thumb-taekwondo.png" alt="Taekwondo competitor with headgear" loading="lazy">
+                  </div>
+                  <div>
+                    <div class="recent-mini-meta">#Pollar. 87 - 12 July 2023</div>
+                    <h4 class="recent-mini-title">Baku 2023 Taekwondo Championships</h4>
+                  </div>
+                </article>
+                
+                <article class="recent-mini-item">
+                  <div class="recent-mini-thumb">
+                    <img src="assets/img/recent-thumb-golf.png" alt="Golf ball on green grass" loading="lazy">
+                  </div>
+                  <div>
+                    <div class="recent-mini-meta">#Goft. Toni - 20 July 2023</div>
+                    <h4 class="recent-mini-title">Open Championship Royal Liverpool Golf</h4>
+                  </div>
+                </article>
+                
+                <article class="recent-mini-item">
+                  <div class="recent-mini-thumb">
+                    <img src="assets/img/recent-thumb-cricket.png" alt="Cricket ball on pitch" loading="lazy">
+                  </div>
+                  <div>
+                    <div class="recent-mini-meta">#Cricket. Toni - 27 July 2023</div>
+                    <h4 class="recent-mini-title">Ireland Tour of England Test 2023</h4>
+                  </div>
+                </article>
+              </div>
+              
+              <a href="#articles" class="btn-more-pill" aria-label="More recent news">
+                <span>More</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Column: Clubs Ranking -->
+        <div class="clubs-ranking-column" id="ranking">
+          <h2 class="section-heading">Clubs Ranking</h2>
+          
+          <div class="clubs-ranking-card">
+            <table class="ranking-table" aria-label="Premier League Clubs Ranking">
+              <thead>
+                <tr>
+                  <th scope="col" class="th-club">Club</th>
+                  <th scope="col">GP</th>
+                  <th scope="col">W</th>
+                  <th scope="col">D</th>
+                  <th scope="col">L</th>
+                  <th scope="col">F</th>
+                  <th scope="col">A</th>
+                  <th scope="col">GD</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="td-club">
+                    <span class="club-rank-num">1</span>
+                    <img src="assets/img/club-mancity.png" alt="Manchester City Logo" class="club-badge-icon" loading="lazy">
+                    <span>Manchester City</span>
+                  </td>
+                  <td>38</td>
+                  <td>29</td>
+                  <td>6</td>
+                  <td>3</td>
+                  <td>99</td>
+                  <td>26</td>
+                  <td>73</td>
+                </tr>
+                <tr>
+                  <td class="td-club">
+                    <span class="club-rank-num">2</span>
+                    <img src="assets/img/club-liverpool.png" alt="Liverpool Logo" class="club-badge-icon" loading="lazy">
+                    <span>Liverpool</span>
+                  </td>
+                  <td>38</td>
+                  <td>28</td>
+                  <td>8</td>
+                  <td>2</td>
+                  <td>94</td>
+                  <td>26</td>
+                  <td>68</td>
+                </tr>
+                <tr>
+                  <td class="td-club">
+                    <span class="club-rank-num">3</span>
+                    <img src="assets/img/club-chelsea.png" alt="Chelsea Logo" class="club-badge-icon" loading="lazy">
+                    <span>Chelsea</span>
+                  </td>
+                  <td>38</td>
+                  <td>21</td>
+                  <td>11</td>
+                  <td>6</td>
+                  <td>76</td>
+                  <td>33</td>
+                  <td>43</td>
+                </tr>
+                <tr>
+                  <td class="td-club">
+                    <span class="club-rank-num">4</span>
+                    <img src="assets/img/club-tottenham.png" alt="Tottenham Hotspur Logo" class="club-badge-icon" loading="lazy">
+                    <span>Tottenham Hotspur</span>
+                  </td>
+                  <td>38</td>
+                  <td>22</td>
+                  <td>5</td>
+                  <td>11</td>
+                  <td>69</td>
+                  <td>40</td>
+                  <td>29</td>
+                </tr>
+                <tr>
+                  <td class="td-club">
+                    <span class="club-rank-num">5</span>
+                    <img src="assets/img/club-arsenal.png" alt="Arsenal Logo" class="club-badge-icon" loading="lazy">
+                    <span>Arsenal</span>
+                  </td>
+                  <td>38</td>
+                  <td>22</td>
+                  <td>3</td>
+                  <td>13</td>
+                  <td>61</td>
+                  <td>48</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td class="td-club">
+                    <span class="club-rank-num">6</span>
+                    <img src="assets/img/club-manunited.png" alt="Manchester United Logo" class="club-badge-icon" loading="lazy">
+                    <span>Manchester United</span>
+                  </td>
+                  <td>38</td>
+                  <td>16</td>
+                  <td>10</td>
+                  <td>12</td>
+                  <td>57</td>
+                  <td>57</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- =========================================================
+         7. SPORTS ARTICLES SECTION
+         ========================================================= -->
+    <section class="section-articles" id="articles">
+      <div class="container">
+        <h2 class="section-heading">Sports Article</h2>
+        
+        <div class="articles-grid" id="articlesGrid">
+          <!-- Article 1: Basketball -->
+          <article class="article-card" data-category="basketball">
+            <div class="article-media">
+              <img src="assets/img/article-basketball-shoes.png" alt="Basketball shoes and ball" loading="lazy">
+              <span class="badge-outline article-badge">Basketball</span>
+            </div>
+            
+            <div class="article-author-row">
+              <div class="author-avatar">
+                <img src="assets/img/author-jake-will.png" alt="Jake Will." loading="lazy">
+              </div>
+              <span class="author-name">Jake Will.</span>
+            </div>
+            
+            <span class="article-date">04 June 2023</span>
+            <h3 class="article-title">5 Exercises Basketball Players Should Be Using To Develop Strength</h3>
+            <p class="article-excerpt">
+              This article was written by Jake Willhoite from Healthlisted.com Strength in basketball isn’t all about a massive body mass or ripped muscles.
+            </p>
+          </article>
+          
+          <!-- Article 2: Hockey -->
+          <article class="article-card" data-category="hockey">
+            <div class="article-media">
+              <img src="assets/img/article-hockey-player.png" alt="Ice hockey player on the rink" loading="lazy">
+              <span class="badge-outline article-badge">Hockey</span>
+            </div>
+            
+            <div class="article-author-row">
+              <div class="author-avatar">
+                <img src="assets/img/author-foxi-zacon.png" alt="Foxi.zacon" loading="lazy">
+              </div>
+              <span class="author-name">Foxi.zacon</span>
+            </div>
+            
+            <span class="article-date">03 June 2023</span>
+            <h3 class="article-title">Golden Knights out to fulfill owner's quest to win Stanley Cup in 6th year</h3>
+            <p class="article-excerpt">
+              The Vegas Golden Knights will play the Florida Panthers in the Stanley Cup Final beginning Saturday.
+            </p>
+          </article>
+          
+          <!-- Article 3: Badminton -->
+          <article class="article-card" data-category="badminton">
+            <div class="article-media">
+              <img src="assets/img/article-badminton-racket.png" alt="Badminton shuttles and racket" loading="lazy">
+              <span class="badge-outline article-badge">Badminton</span>
+            </div>
+            
+            <div class="article-author-row">
+              <div class="author-avatar">
+                <img src="assets/img/author-bong-lozada.png" alt="Bong Lozada" loading="lazy">
+              </div>
+              <span class="author-name">Bong Lozada</span>
+            </div>
+            
+            <span class="article-date">01 June 2023</span>
+            <h3 class="article-title">‘Outdoor’ Badminton Gets Support From Local Federation</h3>
+            <p class="article-excerpt">
+              The Badminton World Federation is developing Air Badminton and the country’s governing body, Philippine Badminton Association.
+            </p>
+          </article>
+        </div>
+        
+        <!-- Articles Prev / Next Controls -->
+        <div class="articles-nav-controls">
+          <button type="button" class="page-arrow-btn" id="articlesPrevBtn" aria-label="Previous articles">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+          </button>
+          
+          <button type="button" class="page-arrow-btn btn-dark" id="articlesNextBtn" aria-label="Next articles">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         8. NEWSLETTER & FOOTER SECTION
+         ========================================================= -->
+    <section class="section-newsletter" id="newsletter">
+      <div class="container">
+        
+        <!-- Newsletter Box -->
+        <div class="newsletter-box">
+          <div class="newsletter-left">
+            <h2 class="newsletter-title">
+              <span class="line-1">NEWSLETTER</span><br>
+              <span class="line-2">SUBSCRIPTION</span>
+            </h2>
+            
+            <form class="newsletter-form" id="newsletterForm" novalidate>
+              <input 
+                type="email" 
+                class="newsletter-input" 
+                id="newsletterEmail" 
+                placeholder="shovon.khan0099@gmail.com" 
+                aria-label="Email address for newsletter"
+                required
+              >
+              <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe to newsletter">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </button>
+            </form>
+            
+            <div class="newsletter-feedback" id="newsletterFeedback" role="status" aria-live="polite"></div>
+          </div>
+          
+          <div class="newsletter-right" aria-hidden="true">
+            <svg class="newsletter-spirals" viewBox="0 0 200 300" fill="none" stroke="#BAC7D5" stroke-width="2.5">
+              <ellipse cx="100" cy="50" rx="75" ry="32" transform="rotate(-15 100 50)" />
+              <ellipse cx="100" cy="90" rx="75" ry="32" transform="rotate(-15 100 90)" />
+              <ellipse cx="100" cy="130" rx="75" ry="32" transform="rotate(-15 100 130)" />
+              <ellipse cx="100" cy="170" rx="75" ry="32" transform="rotate(-15 100 170)" />
+              <ellipse cx="100" cy="210" rx="75" ry="32" transform="rotate(-15 100 210)" />
+              <ellipse cx="100" cy="250" rx="75" ry="32" transform="rotate(-15 100 250)" />
+            </svg>
+            <img src="assets/img/newsletter-quarterback.png" alt="American football player throwing football" class="newsletter-player-img" loading="lazy">
+          </div>
+        </div>
+        
+        <!-- Footer Bottom Bar -->
+        <footer class="footer-bar">
+          <div class="social-links" aria-label="Social media links">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+          </div>
+          
+          <div class="pagination-controls" aria-label="Footer Pagination">
+            <button type="button" class="page-arrow-btn" id="footerPrevBtn" aria-label="Previous page">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </button>
+            
+            <div class="page-numbers" id="footerPageNumbers">
+              <button type="button" class="page-number active" data-page="1">1</button>
+              <button type="button" class="page-number" data-page="2">2</button>
+              <button type="button" class="page-number" data-page="3">3</button>
+              <button type="button" class="page-number" data-page="4">4</button>
+            </div>
+            
+            <button type="button" class="page-arrow-btn btn-dark" id="footerNextBtn" aria-label="Next page">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </footer>
+        
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       SEARCH MODAL
+       ========================================================= -->
+  <div class="search-modal-backdrop" id="searchModal" role="dialog" aria-modal="true" aria-labelledby="searchModalTitle">
+    <div class="search-modal-card">
+      <div class="search-modal-header">
+        <h3 class="search-modal-title" id="searchModalTitle">Search Sport News</h3>
+        <button type="button" class="close-search-btn" id="closeSearchBtn" aria-label="Close search dialog">&times;</button>
+      </div>
+      
+      <div class="modal-input-row">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="modalSearchInput" placeholder="Type a sport, team, or player..." autofocus>
+      </div>
+      
+      <div class="search-results-list" id="searchResults">
+        <div class="search-result-item" data-target="#home">
+          <span>Top Scorer to the Final Match - EuroLeague</span>
+          <span style="color: #94A3B8;">EuroLeague</span>
+        </div>
+        <div class="search-result-item" data-target="#trending">
+          <span>Lionel Messi Leaving Ligue 1 Team Paris Saint-Germain</span>
+          <span style="color: #94A3B8;">Football</span>
+        </div>
+        <div class="search-result-item" data-target="#trending">
+          <span>Discover the Member Benefits of USA Cycling</span>
+          <span style="color: #94A3B8;">Cycling</span>
+        </div>
+        <div class="search-result-item" data-target="#recent">
+          <span>Baku 2023 World Taekwondo Championships</span>
+          <span style="color: #94A3B8;">Taekwondo</span>
+        </div>
+        <div class="search-result-item" data-target="#ranking">
+          <span>Premier League Clubs Ranking 2023</span>
+          <span style="color: #94A3B8;">Rankings</span>
+        </div>
+        <div class="search-result-item" data-target="#articles">
+          <span>5 Exercises Basketball Players Should Be Using</span>
+          <span style="color: #94A3B8;">Basketball</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+
